@@ -1,0 +1,16 @@
+export default function Home() {
+  return (
+    <div className="page">
+      <main className="hero">
+        <span className="badge">🧁 Bake It Up</span>
+        <h1>Bake something wonderful today.</h1>
+        <p>
+          Bake It Up is your kitchen companion: find recipes you&apos;ll love,
+          follow clear step-by-step instructions, and scale ingredients for any
+          batch size, so every bake comes out just right.
+        </p>
+      </main>
+      <footer className="footer">Made by Kendall Huffman</footer>
+    </div>
+  );
+}
