@@ -1,0 +1,75 @@
+:root {
+  --bg: #fff8f1;
+  --text: #3b2416;
+  --muted: #7a5a45;
+  --accent: #e07a5f;
+  --badge-bg: #fde4d6;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1f1611;
+    --text: #fbeee4;
+    --muted: #c9ad99;
+    --accent: #f2a285;
+    --badge-bg: #3a2a20;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 64px 16px;
+  max-width: 720px;
+  margin: 0 auto;
+  gap: 24px;
+}
+
+.badge {
+  background: var(--badge-bg);
+  color: var(--accent);
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 0.95rem;
+}
+
+h1 {
+  font-size: clamp(2.25rem, 6vw, 3.75rem);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.hero p {
+  font-size: 1.15rem;
+  line-height: 1.6;
+  color: var(--muted);
+}
+
+.footer {
+  text-align: center;
+  padding: 24px 16px;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
